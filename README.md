@@ -10,6 +10,8 @@ of feature branch. It gets ticket number from branch name. Branch name should ha
 
     For example if first commit is named `Implements some feature` this script will update it with ticket number and it will look like `[EXAMPLE-305] Implements some feature`.
 
+* [pre-commit.php-cs-fixer.sh](src/pre-commit.php-cs-fixer.sh) - this script runs PHP-CS-Fixer before commit for fixing code style.
+
 Installation
 ------------
 
