@@ -2,7 +2,7 @@
 
 set -e
 
-BRANCH_MASTER="master";
+BRANCH_MASTER="master"
 
 if [[ $(git rev-parse --abbrev-ref HEAD) == $BRANCH_MASTER ]];
 then
