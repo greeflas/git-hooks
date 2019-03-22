@@ -15,11 +15,11 @@ then
         read -p "Are you really want to continue?  [y/n] " answer
         case "$answer" in
             y|yes)
-                echo -e  "Commit successful."
+                echo "Commited successfully.\n"
                 exit 0
                 ;;
             n|no)
-                echo -e "Commit has failed."
+                echo "Commit was canceled."
                 exit 1
                 ;;
             *)
