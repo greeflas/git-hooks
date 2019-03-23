@@ -12,6 +12,9 @@ of feature branch. It gets ticket number from branch name. Branch name should ha
 
 * [pre-commit.php-cs-fixer.sh](src/pre-commit.php-cs-fixer.sh) - this script runs PHP-CS-Fixer before commit for fixing code style.
 
+* [pre-commit.check_working_on_master.sh](src/pre-commit.check_working_on_master.sh) - this script helps to warn if you make commit on the master branch.
+
+
 Installation
 ------------
 
