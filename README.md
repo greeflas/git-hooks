@@ -14,6 +14,7 @@ of feature branch. It gets ticket number from branch name. Branch name should ha
 
 * [pre-commit.check_working_on_master.sh](src/pre-commit.check_working_on_master.sh) - this script helps to warn if you make commit on the master branch.
 
+* [pre-commit.phpunit.sh](src/pre-commit.phpunit.sh) - this script runs PHPUnit before commit for running tests.
 
 Installation
 ------------
