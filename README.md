@@ -5,16 +5,20 @@
     <h1 align="center">Repository of useful Git Hooks scripts for CI</h1>
 </p>
 
-* [prepare-commit-msg.ticket-number.sh](src/prepare-commit-msg.ticket-number.sh) - this script adds ticket number to the first commit
+### prepare-commit-msg
+
+* [ticket_number.sh](src/prepare-commit-msg/ticket_number.sh) - this script adds ticket number to the first commit
 of feature branch. It gets ticket number from branch name. Branch name should have following format `EXAMPLE-305-some-feature`.
 
     For example if first commit is named `Implements some feature` this script will update it with ticket number and it will look like `[EXAMPLE-305] Implements some feature`.
 
-* [pre-commit.php-cs-fixer.sh](src/pre-commit.php-cs-fixer.sh) - this script runs PHP-CS-Fixer before commit for fixing code style.
+### pre-commit
 
-* [pre-commit.check_working_on_master.sh](src/pre-commit.check_working_on_master.sh) - this script helps to warn if you make commit on the master branch.
+* [php_cs_fixer.sh](src/pre-commit/php_cs_fixer.sh) - this script runs PHP-CS-Fixer before commit for fixing code style.
 
-* [pre-commit.phpunit.sh](src/pre-commit.phpunit.sh) - this script runs PHPUnit before commit for running tests.
+* [check_working_on_master.sh](src/pre-commit/check_working_on_master.sh) - this script helps to warn if you make commit on the master branch.
+
+* [phpunit.sh](src/pre-commit/phpunit.sh) - this script runs PHPUnit before commit for running tests.
 
 Installation
 ------------
@@ -25,7 +29,7 @@ Installation
 
 2. Create a symlink for needed script in your project `.git/hooks` directory
 
-    `$ ln -s ~/tools/git-hooks/src/prepare-commit-msg.ticket-number.sh .git/hooks/prepare-commit-msg`
+    `$ ln -s ~/tools/git-hooks/src/prepare-commit-msg/ticket_number.sh .git/hooks/prepare-commit-msg`
 
 License
 -------
