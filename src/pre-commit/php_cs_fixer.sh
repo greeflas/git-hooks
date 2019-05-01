@@ -7,4 +7,4 @@ then
     exit 1
 fi
 
-vendor/bin/php-cs-fixer fix
+vendor/bin/php-cs-fixer fix --diff
