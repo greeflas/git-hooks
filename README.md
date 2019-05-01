@@ -41,6 +41,11 @@ Installation
 
     `$ ln -s ~/tools/git-hooks/src/prepare-commit-msg/ticket_number.sh .git/hooks/prepare-commit-msg`
 
+Contributing
+------------
+
+For information about contributing please read [CONTRIBUTING.md](CONTRIBUTING.md).
+
 License
 -------
 
