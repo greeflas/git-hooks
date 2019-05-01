@@ -1,0 +1,15 @@
+language: bash
+
+git:
+  depth: 1
+
+# faster builds on new travis setup not using sudo
+sudo: false
+
+# show spellcheck version
+before_script:
+  - shellcheck --version
+
+script:
+  # Fail if any of these files have warnings
+  - shellcheck ./src/*/*.sh

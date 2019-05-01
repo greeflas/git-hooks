@@ -5,6 +5,8 @@
     <h1 align="center">Useful scripts for Git Hooks</h1>
 </p>
 
+[![Build Status](https://travis-ci.org/greeflas/git-hooks.svg?branch=master)](https://travis-ci.org/greeflas/git-hooks)
+
 ### prepare-commit-msg
 
 * [ticket_number.sh](src/prepare-commit-msg/ticket_number.sh) - this script adds ticket number to the first commit
