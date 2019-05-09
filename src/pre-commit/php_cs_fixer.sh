@@ -8,3 +8,5 @@ then
 fi
 
 vendor/bin/php-cs-fixer fix --diff
+
+git add --all
