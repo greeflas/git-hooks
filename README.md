@@ -32,6 +32,14 @@ in feature branch. It gets ticket number from branch name. Branch name should ha
 
     > Symlink: ln -s ~/tools/git-hooks/src/pre-commit/check_working_on_master.sh .git/hooks/pre-commit
 
+### post-merge
+
+* [composer_install.sh](src/post-merge/composer_install.sh) - this script installs composer packages specified in 
+composer.json or composer.lock if it presents after pull or 
+merge.
+
+    > Symlink: ln -s ~/tools/git-hooks/src/post-merge/composer_install.sh .git/hooks/post-merge
+
 Installation
 ------------
 
