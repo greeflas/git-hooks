@@ -12,5 +12,9 @@ ticket=$(git rev-parse --abbrev-ref HEAD | cut -f 1,2 -d '-')
 if [[ $EACH_COMMIT || $base_commit_hash == "$parent_commit_hash" ]];
 then
     original_message=$(cat "$1")
-    echo "[$ticket] $original_message" > "$1"
+
+    if [[ $original_message != *$ticket* ]];
+    then
+        echo "[$ticket] $original_message" > "$1"
+    fi
 fi
