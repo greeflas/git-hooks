@@ -10,9 +10,9 @@
 ### prepare-commit-msg
 
 * [ticket_number.sh](src/prepare-commit-msg/ticket_number.sh) - this script adds ticket number to commits
-in feature branch. It gets ticket number from branch name. Branch name should have following format `EXAMPLE-305-some-feature`.
+in feature branch. It gets ticket number from branch name. Branch name should have following format `EXAMPLE-305/some_feature`.
 
-    For example if first commit is named `Implements some feature` this script will update it with ticket number and it will look like `[EXAMPLE-305] Implements some feature`.
+    For example if first commit is named `Implements some feature` this script will update it with ticket number and it will look like `EXAMPLE-305 Implements some feature`.
 
     Also you can set `EACH_COMMIT` variable to `false` if you want add ticket number only for the first commit.
 
@@ -62,4 +62,5 @@ License
 
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 
-Copyright (c) 2019, Vladimir Kuprienko
+Copyright (c) 2019 - 2024, Volodymyr Kupriienko
+
